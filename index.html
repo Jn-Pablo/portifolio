@@ -16,43 +16,76 @@
 <!-- Header flutuante -->
 <header id="header" class="absolute pt-10 left-0 w-full z-50 transition-all duration-500 bg-transparent">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-   <h1  class="text-3xl font-light text-white"> 
-    <a href="#sobre">Joan Pablo</a></h1>
+    <h1 class="text-3xl font-light text-white">
+      <a href="#sobre">Joan Pablo</a>
+    </h1>
 
+    <!-- Botão hamburguer -->
+    <button id="menu-toggle" aria-label="Toggle menu" class="block sm:hidden text-white text-3xl focus:outline-none">
+      <!-- Ícone hambúrguer -->
+      <svg id="icon-hamburger" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <!-- Ícone X (fechar), escondido inicialmente -->
+      <svg id="icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
 
-    <nav  class=" flex space-x-12 text-white text-lg">
-      <a href="#sobre" data-section="sobre" class="relative group opacity-70 hover:opacity-100 transition">
+    <!-- Menu desktop -->
+    <nav id="menu" class="hidden sm:flex space-x-12 text-white text-lg">
+      <a href="#sobre" class="relative group opacity-70 hover:opacity-100 transition">
         Sobre
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
-      <a href="#ferramentas" data-section="ferramentas" class="relative group opacity-70 hover:opacity-100 transition ">
+      <a href="#ferramentas" class="relative group opacity-70 hover:opacity-100 transition">
         Ferramentas
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
-      <a href="#projetos" data-section="projetos" class="relative group opacity-70 hover:opacity-100 transition ">
+      <a href="#projetos" class="relative group opacity-70 hover:opacity-100 transition">
         Projetos
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
-      <a href="#contato" data-section="contato" class="relative group opacity-70 hover:opacity-100 transition ">
+      <a href="#contato" class="relative group opacity-70 hover:opacity-100 transition">
         Contato
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
       <a href="https://github.com/Jn-Pablo" target="_blank" class="hover:opacity-80 transition">
-           <iconify-icon icon="mdi:github" width="28" class="text-white-600"></iconify-icon>
-</a>
+        <iconify-icon icon="mdi:github" width="28" class="text-white"></iconify-icon>
+      </a>
     </nav>
   </div>
+
+  <!-- menu mobile -->
+  <nav id="mobile-menu" class="sm:hidden hidden flex-col bg-blue-700 text-white text-lg px-6 py-6 space-y-6 max-w-xs mx-auto mt-4 rounded-md shadow-lg opacity-0 transform -translate-y-4 transition-all duration-300">
+    <a href="#sobre" class="block opacity-70 hover:opacity-100 transition">Sobre</a>
+    <a href="#ferramentas" class="block opacity-70 hover:opacity-100 transition">Ferramentas</a>
+    <a href="#projetos" class="block opacity-70 hover:opacity-100 transition">Projetos</a>
+    <a href="#contato" class="block opacity-70 hover:opacity-100 transition">Contato</a>
+    <a href="https://github.com/Jn-Pablo" target="_blank" class="block hover:opacity-80 transition">
+      <iconify-icon icon="mdi:github" width="28" class="text-white"></iconify-icon>
+    </a>
+  </nav>
 </header>
-
-
 <!-- termina o header-->
-<!-- header flutuante -->
+
 <!-- header flutuante -->
 <header id="floatingHeader" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4 transition-all duration-500 opacity-0 pointer-events-none">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
     <h1 class="text-xl font-bold text-blue-600"><a href="#sobre">Joan Pablo</a></h1>
-     <!-- os mesmos links -->
-    <nav class="flex space-x-12 text-blue-600 text-[17px]">
+
+    <button id="menu-toggle" aria-label="Toggle menu" class="block sm:hidden text-blue-600 focus:outline-none">
+      <!-- Ícone hambúrguer -->
+      <svg id="icon-hamburger" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <!-- Ícone X (fechar), escondido inicialmente -->
+      <svg id="icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <nav class="hidden sm:flex space-x-12 text-blue-600 text-[17px]">
       <a href="#sobre" data-section="sobre" class="relative group hover:text-blue-200">
         Sobre
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
@@ -69,12 +102,24 @@
         Contato
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
-      <a href="https://github.com/seu-usuario" target="_blank" class="hover:opacity-80 transition">
-           <iconify-icon icon="mdi:github" width="28" class="text-blue-600"></iconify-icon>
-     </a>
+      <a href="https://github.com/Jn-Pablo" target="_blank" class="hover:opacity-80 transition">
+        <iconify-icon icon="mdi:github" width="28" class="text-blue-600"></iconify-icon>
+      </a>
     </nav>
   </div>
+
+  <nav id="mobile-menu" class="sm:hidden hidden flex-col bg-blue-700 text-white text-lg px-6 py-6 space-y-6 max-w-xs mx-auto mt-4 rounded-md shadow-lg opacity-0 transform -translate-y-4 transition-all duration-300"
+>
+    <a href="#sobre" class="block opacity-70 hover:opacity-100 transition">Sobre</a>
+    <a href="#ferramentas" class="block opacity-70 hover:opacity-100 transition">Ferramentas</a>
+    <a href="#projetos" class="block opacity-70 hover:opacity-100 transition">Projetos</a>
+    <a href="#contato" class="block opacity-70 hover:opacity-100 transition">Contato</a>
+    <a href="https://github.com/Jn-Pablo" target="_blank" class="block hover:opacity-80 transition">
+      <iconify-icon icon="mdi:github" width="28" class="text-white"></iconify-icon>
+    </a>
+  </nav>
 </header>
+
 <!--Se alguem tiver vendo isso,eu n sei codar no front-->
 
 <!--                                                  2ª seção                        -->
@@ -281,6 +326,8 @@
   </div>
 
  <!-- dependências via folder and cdn -->
+<script src="script/responsive-header-two.js"></script>
+<script src="script/responsive-menu.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
