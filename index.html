@@ -5,49 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Resume Jpablo</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700" rel="stylesheet">
-    <!-- Adicionando AOS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700" rel="stylesheet">
+     <!-- efeito aos -->
      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <style>
-  body {
-  overflow-x: hidden;
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth; 
-  background-color: #f9f9f9; 
-  margin: 0;
-  padding: 0;
-}
-html {
-  scroll-behavior: smooth; }
-      
-      section {
-        padding-top: 580px; 
-      }
-       .active span {
-    width: 100% !important;
-  }
-       #ferramentas {
-    scroll-margin-top: -100px;
-  }
-    [data-aos="fade-up"] {
-    transform: translateY(20px); 
-  }
-      .diagonal-border {
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        background-color: white;
-        clip-path: polygon(0 100%, 100% 50%, 100% 100%, 0 100%);
-      }
-      header {
-  font-family: 'Segoe UI', sans-serif;
-}
-    </style>
-
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="style/config-body-scroll.css">
+ 
 </head>
 <body class=" text-gray-800   bg-gradient-to-br from-blue-500 via-blue-400 to-green-400">
 <!-- Header flutuante -->
@@ -316,111 +279,14 @@ html {
         <p class="text-gray-600">Sistema web com PHP e AJAX para envio de chamados com banco de dados MySQL.</p>
       </div>
   </div>
-  <!-- Diagonal -->
 
-
-
-  <!-- Apresentação -->
-
-
-<!-- cript AOS -->
- 
+ <!-- dependências via folder and cdn -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-<script>
-  AOS.init(); 
-tsParticles.load("tsparticles", {
-  fullScreen: { enable: false },
-  particles: {
-    number: {
-      value: 80,
-      density: { enable: true, value_area: 800 }
-    },
-    color: { value: "#ffffff" }, // bolinhas brancas
-    shape: { type: "circle" },
-    opacity: {
-      value: 0.5,
-      random: true
-    },
-    size: {
-      value: 3,
-      random: true
-    },
-    move: {
-      enable: true,
-      speed: 1,
-      direction: "none",
-      out_mode: "out"
-    }
-  },
-  interactivity: {
-    events: {
-      onhover: { enable: true, mode: "repulse" },
-      onclick: { enable: true, mode: "push" }
-    },
-    modes: {
-      repulse: { distance: 100, duration: 0.4 },
-      push: { particles_nb: 4 }
-    }
-  },
-  background: {
-    color: "#000000" // fundo preto
-  }
-});
-</script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<script>
-  const floatingHeader = document.getElementById('floatingHeader');
-  const cardsSection = document.getElementById('cards');
-
-  window.addEventListener('scroll', () => {
-    const cardsTop = cardsSection.getBoundingClientRect().top;
-
-    if (cardsTop <= 300) {
-      
-      floatingHeader.classList.add('opacity-100', 'pointer-events-auto');
-      floatingHeader.classList.remove('opacity-0', 'pointer-events-none');
-    } else {
-     
-      floatingHeader.classList.add('opacity-0', 'pointer-events-none');
-      floatingHeader.classList.remove('opacity-100', 'pointer-events-auto');
-    }
-  });
-</script>
-<script>
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll("#header nav a, #floatingHeader nav a");
-
-  function onScroll() {
-    let currentSection = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        currentSection = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === "#" + currentSection) {
-        link.classList.add("active");
-      }
-    });
-  }
-window.addEventListener("scroll", onScroll);
-window.addEventListener("load", onScroll); // ⬅️ Adicionado para rodar ao carregar a página
-navLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    setTimeout(() => {
-      onScroll(); // força atualização após o scroll por clique
-    }, 100); // pequeno delay para garantir que o scroll foi concluído
-  });
-});
-</script>
-
+<script src="script/initialization-aos-ts.js"></script>
+<script src="script/scroll-header.js"></script>
+<script src="script/scroll-dinamic-header-two.js"></script>
 
 
 
