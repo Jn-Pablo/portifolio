@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br"  class="bg-slate-900">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume Pablo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700" rel="stylesheet">
+    <!-- Adicionando AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+  body {
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth; 
+  background-color: #f9f9f9; 
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth; }
+      
+      section {
+        padding-top: 580px; 
+      }
+       .active span {
+    width: 100% !important;
+  }
+       #ferramentas {
+    scroll-margin-top: -100px;
+  }
+    [data-aos="fade-up"] {
+    transform: translateY(20px); 
+  }
+      .diagonal-border {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        clip-path: polygon(0 100%, 100% 50%, 100% 100%, 0 100%);
+      }
+      header {
+  font-family: 'Segoe UI', sans-serif;
+}
+    </style>
+
+</head>
+<body class=" text-gray-800   bg-gradient-to-br from-blue-500 via-blue-400 to-green-400">
+<!-- Header flutuante -->
+<header id="header" class="absolute pt-10 left-0 w-full z-50 transition-all duration-500 bg-transparent">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+   <h1  class="text-3xl font-light text-white"> 
+    <a href="#sobre">Joan Pablo</a></h1>
+
+
+    <nav  class=" flex space-x-12 text-white text-lg">
+      <a href="#sobre" data-section="sobre" class="relative group opacity-70 hover:opacity-100 transition">
+        Sobre
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="#ferramentas" data-section="ferramentas" class="relative group opacity-70 hover:opacity-100 transition ">
+        Ferramentas
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="#projetos" data-section="projetos" class="relative group opacity-70 hover:opacity-100 transition ">
+        Projetos
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="#contato" data-section="contato" class="relative group opacity-70 hover:opacity-100 transition ">
+        Contato
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="https://github.com/Jn-Pablo" target="_blank" class="hover:opacity-80 transition">
+           <iconify-icon icon="mdi:github" width="28" class="text-white-600"></iconify-icon>
+</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- termina o header-->
+<!-- header flutuante -->
+<!-- header flutuante -->
+<header id="floatingHeader" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4 transition-all duration-500 opacity-0 pointer-events-none">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-600"><a href="#sobre">Joan Pablo</a></h1>
+     <!-- os mesmos links -->
+    <nav class="flex space-x-12 text-blue-600 text-[17px]">
+      <a href="#sobre" data-section="sobre" class="relative group hover:text-blue-200">
+        Sobre
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="#ferramentas" data-section="ferramentas" class="relative group hover:text-blue-200">
+        Ferramentas
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="#projetos" data-section="projetos" class="relative group hover:text-blue-200">
+        Projetos
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="#contato" data-section="contato" class="relative group hover:text-blue-200">
+        Contato
+        <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
+      </a>
+      <a href="https://github.com/seu-usuario" target="_blank" class="hover:opacity-80 transition">
+           <iconify-icon icon="mdi:github" width="28" class="text-blue-600"></iconify-icon>
+     </a>
+    </nav>
+  </div>
+</header>
+<!--Se alguem tiver vendo isso,eu n sei codar no front-->
+
+<!--                                                  2ª seção                        -->
+<section id="sobre" class="scroll-mt-[200px] relative text-center min-h-[130vh] flex flex-col justify-center items-center
+ bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+  <!-- Apresentação -->
+  <div class="relative z-20 mt-[-750px]">
+    <h2 class="text-4xl font-bold text-white mb-4">Olá, eu sou o Joan Pablo</h2>
+    <p class="text-lg text-white max-w-xl mx-auto" data-aos="fade-up" data-aos-duration="2000">
+      Sou Formado em Técnologia da Informação, aprendiz em proramação, com foco em desenvolvimento web.
+    </p>
+  </div>
+
+  <!-- Título "Olá" 60px acima da diagonal -->
+  <div class="absolute bottom-[180px] z-20 text-center "data-aos="fade-up" data-aos-duration="3000">
+    <h3 style="font-family: 'Segoe UI', sans-serif;"  class="text-3xl font-bold text-white">Readme Competências</h3>
+  </div>
+
+  <!-- Diagonal -->
+ <div class="absolute bottom-[-100px] left-0 w-full h-[120px] bg-black rotate-[-2deg] origin-top-left z-10 overflow-hidden">
+  <div id="tsparticles-rodape" class="w-full h-full"></div>
+</div>
+
+</section>
+
+<!-- Fundo branco por trás dos cards -->
+<div class="absolute w-full h-[200px] bg-white z-30 -mt-[20px]">
+  <div class="absolute inset-0 w-full h-full bg-black z-0">
+  <div id="tsparticles-cards" class="w-full h-full"></div>
+</div>
+
+  <!-- aqui e pra aparecer o h3 -->
+<div  id="cards" class="relative z-40 flex justify-center gap-25 -mt-[150px] ">
+
+<!-- AOS apenas no wrapper -->
+<div class="bg-white" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="1500">
+  <div 
+    class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
+           transition-[background-color,color] duration-[1000ms] ease-[cubic-bezier(0.4,0,0.2,1)] 
+           shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] rounded-0
+           p-12 w-[400px] h-[380px] cursor-pointer 
+           flex flex-col justify-center">
+  
+  <div>
+    <h4 class="text-xl font-semibold text-center mb-4">Front end</h4>
+  </div>  
+       <div class="flex flex-col gap-4 items-start">
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:html-5" width="30"></iconify-icon>
+        <span>HTML5</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:tailwindcss-icon" width="30"></iconify-icon>
+        <span>TailwindCSS</span>
+      </div>
+    
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:javascript" width="30"></iconify-icon>
+        <span>JavaScript</span>
+      </div>
+        <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:css-3" width="30"></iconify-icon>
+        <span>CSS3</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:bootstrap" width="30"></iconify-icon>
+        <span>Bootstrap</span>
+      </div>
+      </div>
+  </div>
+</div>
+
+  <!-- cartão 2 -->  
+<div data-aos="fade-left"  data-aos-delay="300"  data-aos-duration="1500">
+  <div 
+    class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
+           transition-[background-color,color] duration-[1000ms] ease-[cubic-bezier(0.4,0,0.2,1)] 
+           shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] rounded-0
+           p-12 w-[500px] h-[360px] cursor-pointer 
+           flex flex-col justify-center" >
+    <h4 class="text-xl font-semibold text-center mb-6">
+      Back end
+    </h4>
+    <iconify-icon icon="carbon:server-rack" width="28" class="mb-4 text-gray-500"></iconify-icon>
+    <div class="flex flex-col gap-4 items-start">
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:java" width="30"></iconify-icon>
+        <span>Java v.11 e v.17</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:spring-icon" width="30"></iconify-icon>
+        <span>Spring</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:php" width="30"></iconify-icon>
+        <span>PHP</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:mysql" width="30"></iconify-icon>
+        <span>MySQL</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <iconify-icon icon="logos:postgresql" width="30"></iconify-icon>
+        <span>PostgreSQL</span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<h3 class="text-2xl font-bold mt-16 mb-6 text-center">Essas são algumas tecnologias que eu utilizo</h3>
+</div>
+
+  <!--                                                       termina 2  seção -->
+
+<!-- Ferramentas -->
+<section id="ferramentas" class="mt-180 relative min-h-[160vh] w-full px-4 pt-64 pb-64 bg-black z-20 scroll-mt-[1000px] overflow-hidden">
+
+  <!-- tsParticles aqui dentro -->
+  <div id="tsparticles" class="absolute inset-0 z-0"></div>
+
+  <!-- Conteúdo da section -->
+  <div class="relative z-10 text-white">
+    <h3 class="text-2xl font-bold mb-6 text-center">Principais Ferramentas</h3>
+
+    <div class="grid md:grid-cols-2 gap-2 justify-items-center">
+      <!-- Cartão PHP -->
+      <div data-aos="fade-up"
+        data-aos-duration="1200"
+        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
+        <h4 class="text-xl font-bold text-center">PHP</h4>
+        <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP"
+          class="w-20 h-auto mx-auto mt-4">
+      </div>
+
+      <!-- Cartão Java -->
+      <div data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="300"
+        data-aos-offset="120"
+        data-aos-easing="ease-out-cubic"
+        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
+        <h4 class="text-xl font-semibold mb-5 text-center">Java</h4>
+        <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java Logo"
+          class="w-14 h-auto mb-6 mx-auto">
+      </div>
+    </div>
+
+    <h3 class="text-2xl font-bold mt-16 mb-6 text-center">Banco de Dados</h3>
+
+    <div class="grid md:grid-cols-2 gap-4 justify-items-center">
+      <!-- Cartão MySQL -->
+      <div data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="300"
+        data-aos-offset="120"
+        data-aos-easing="ease-out-cubic"
+        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
+        <h4 class="text-xl font-semibold mb-4 text-center">MySQL</h4>
+        <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo"
+          class="w-20 h-auto mb-2 mx-auto">
+      </div>
+
+      <!-- Cartão PostgreSQL -->
+      <div data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="300"
+        data-aos-offset="120"
+        data-aos-easing="ease-out-cubic"
+        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
+        <h4 class="text-xl font-semibold mb-4 text-center">PostgreSQL</h4>
+        <img src="https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png"
+          alt="PostgreSQL Logo" class="w-20 h-auto mb-2 mx-auto">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Projetos -->
+
+
+<div class="absolute bottom-[-1620px] left-[-25vw] w-[200vw] h-[120px] bg-black rotate-[-2deg] origin-top-left z-30 overflow-hidden">
+  <div id="tsparticles-rodape" class="w-full h-full pointer-events-none"></div>
+</div>
+
+
+<!-- Seção real, sem interferência da faixa -->
+ <section id="projetos" class="scroll-mt-[-70px] relative text-center min-h-[130vh] flex flex-col justify-center items-center
+ bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+  <!-- Apresentação -->
+   
+  <div class="relative z-20 mt-[-750px]">
+   <h3 class="text-3xl font-bold text-center text-white mb-12">Projetos Desenvolvidos</h3>
+   <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Sistema de Chamados</h4>
+        <img src="img/Captura de tela 2025-03-02 180330.png" alt="Sistema de Chamados"  class="w-full h-40 object-cover rounded mb-4">
+        <p class="text-gray-600">Sistema web com PHP e AJAX para envio de chamados com banco de dados MySQL.</p>
+      </div>
+  </div>
+  <!-- Diagonal -->
+
+
+
+  <!-- Apresentação -->
+
+
+<!-- cript AOS -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+  AOS.init(); 
+tsParticles.load("tsparticles", {
+  fullScreen: { enable: false },
+  particles: {
+    number: {
+      value: 80,
+      density: { enable: true, value_area: 800 }
+    },
+    color: { value: "#ffffff" }, // bolinhas brancas
+    shape: { type: "circle" },
+    opacity: {
+      value: 0.5,
+      random: true
+    },
+    size: {
+      value: 3,
+      random: true
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" }
+    },
+    modes: {
+      repulse: { distance: 100, duration: 0.4 },
+      push: { particles_nb: 4 }
+    }
+  },
+  background: {
+    color: "#000000" // fundo preto
+  }
+});
+</script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script>
+  const floatingHeader = document.getElementById('floatingHeader');
+  const cardsSection = document.getElementById('cards');
+
+  window.addEventListener('scroll', () => {
+    const cardsTop = cardsSection.getBoundingClientRect().top;
+
+    if (cardsTop <= 300) {
+      
+      floatingHeader.classList.add('opacity-100', 'pointer-events-auto');
+      floatingHeader.classList.remove('opacity-0', 'pointer-events-none');
+    } else {
+     
+      floatingHeader.classList.add('opacity-0', 'pointer-events-none');
+      floatingHeader.classList.remove('opacity-100', 'pointer-events-auto');
+    }
+  });
+</script>
+<script>
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("#header nav a, #floatingHeader nav a");
+
+  function onScroll() {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + currentSection) {
+        link.classList.add("active");
+      }
+    });
+  }
+window.addEventListener("scroll", onScroll);
+window.addEventListener("load", onScroll); // ⬅️ Adicionado para rodar ao carregar a página
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    setTimeout(() => {
+      onScroll(); // força atualização após o scroll por clique
+    }, 100); // pequeno delay para garantir que o scroll foi concluído
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>
