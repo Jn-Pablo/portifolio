@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  overflow-y: auto;
   font-family: 'Segoe UI', sans-serif;
   scroll-behavior: smooth; 
   background-color: #f9f9f9; 
