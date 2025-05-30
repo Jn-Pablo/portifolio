@@ -132,108 +132,88 @@
       Sou Formado em Técnologia da Informação, aprendiz em proramação, com foco em desenvolvimento web.
     </p>
   </div>
-
-  <!-- Título "Olá" 60px acima da diagonal -->
-  <div class="absolute bottom-[180px] z-20 text-center "data-aos="fade-up" data-aos-duration="3000">
+  <div class="absolute bottom-[120px] z-20 text-center "data-aos="fade-up" data-aos-duration="3000">
     <h3 style="font-family: 'Segoe UI', sans-serif;"  class="text-3xl font-bold text-white">Readme Competências</h3>
   </div>
 
   <!-- Diagonal -->
- <div class="absolute bottom-[-100px] left-0 w-full h-[120px] bg-black rotate-[-2deg] origin-top-left z-10 overflow-hidden">
+ <div class="absolute bottom-[-100px] left-[-25vw] w-[250vw] h-[90px] bg-black rotate-[-2deg] origin-top-left z-10 overflow-hidden">
   <div id="tsparticles-rodape" class="w-full h-full"></div>
 </div>
-
 </section>
 
-<!-- Fundo branco por trás dos cards -->
-<div class="absolute w-full h-[200px] bg-white z-30 -mt-[20px]">
+<div class="relative w-full bg-white z-30 py-16">
   <div class="absolute inset-0 w-full h-full bg-black z-0">
-  <div id="tsparticles-cards" class="w-full h-full"></div>
-</div>
-
-  <!-- aqui e pra aparecer o h3 -->
-<div  id="cards" class="relative z-40 flex justify-center gap-25 -mt-[150px] ">
-
-<!-- AOS apenas no wrapper -->
-<div class="bg-white" data-aos="fade-right" data-aos-delay="300"  data-aos-duration="1500">
-  <div 
-    class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
-           transition-[background-color,color] duration-[1000ms] ease-[cubic-bezier(0.4,0,0.2,1)] 
-           shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] rounded-0
-           p-12 w-[400px] h-[380px] cursor-pointer 
-           flex flex-col justify-center">
-  
-  <div>
-    <h4 class="text-xl font-semibold text-center mb-4">Front end</h4>
-  </div>  
-       <div class="flex flex-col gap-4 items-start">
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:html-5" width="30"></iconify-icon>
-        <span>HTML5</span>
-      </div>
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:tailwindcss-icon" width="30"></iconify-icon>
-        <span>TailwindCSS</span>
-      </div>
+    <div id="tsparticles-cards" class="w-full h-full"></div>
+  </div>
+  <!-- Container dos cards -->
+  <div id="cards" class="relative z-40 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0 px-4 mt-[-150px]">
     
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:javascript" width="30"></iconify-icon>
-        <span>JavaScript</span>
+    <!-- Card Front end -->
+    <div class="w-full md:w-[400px] max-w-[90vw]" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+      <div class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
+                  transition-all duration-1000 ease-in-out 
+                  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] 
+                  rounded-x p-8 cursor-pointer flex flex-col justify-center h-full">
+        <h4 class="text-xl font-semibold text-center mb-4">Front end</h4>
+        <div class="flex flex-col gap-4 items-start">
+              <div class="flex items-center gap-3">
+                <iconify-icon icon="logos:html-5" width="30"></iconify-icon>
+                <span>HTML5</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <iconify-icon icon="logos:tailwindcss-icon" width="30"></iconify-icon>
+                <span>TailwindCSS</span>
+              </div>
+              <div class="flex items-center gap-3"><iconify-icon icon="logos:javascript" width="30"></iconify-icon>
+                <span>JavaScript</span>
+              </div>
+              <div class="flex items-center gap-3"><iconify-icon icon="logos:css-3" width="30"></iconify-icon>
+                <span>CSS3</span>
+              </div>
+              <div class="flex items-center gap-3"><iconify-icon icon="logos:bootstrap" width="30"></iconify-icon>
+                <span>Bootstrap</span>
+              </div>
+        </div>
       </div>
-        <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:css-3" width="30"></iconify-icon>
-        <span>CSS3</span>
-      </div>
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:bootstrap" width="30"></iconify-icon>
-        <span>Bootstrap</span>
-      </div>
-      </div>
-  </div>
-</div>
-
-  <!-- cartão 2 -->  
-<div data-aos="fade-left"  data-aos-delay="300"  data-aos-duration="1500">
-  <div 
-    class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
-           transition-[background-color,color] duration-[1000ms] ease-[cubic-bezier(0.4,0,0.2,1)] 
-           shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] rounded-0
-           p-12 w-[500px] h-[360px] cursor-pointer 
-           flex flex-col justify-center" >
-    <h4 class="text-xl font-semibold text-center mb-6">
-      Back end
-    </h4>
-    <iconify-icon icon="carbon:server-rack" width="28" class="mb-4 text-gray-500"></iconify-icon>
-    <div class="flex flex-col gap-4 items-start">
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:java" width="30"></iconify-icon>
-        <span>Java v.11 e v.17</span>
-      </div>
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:spring-icon" width="30"></iconify-icon>
-        <span>Spring</span>
-      </div>
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:php" width="30"></iconify-icon>
-        <span>PHP</span>
-      </div>
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:mysql" width="30"></iconify-icon>
-        <span>MySQL</span>
-      </div>
-      <div class="flex items-center gap-3">
-        <iconify-icon icon="logos:postgresql" width="30"></iconify-icon>
-        <span>PostgreSQL</span>
-      </div>
-      
     </div>
-  </div>
+
+    <!-- Card Back end -->
+    <div class="w-full md:w-[500px] max-w-[90vw]" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+      <div class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
+                  transition-all duration-1000 ease-in-out 
+                  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] 
+                  rounded-x p-8 cursor-pointer flex flex-col justify-center h-full">
+        <h4 class="text-xl font-semibold text-center mb-6">Back end</h4>
+        <iconify-icon icon="carbon:server-rack" width="28" class="mb-4 text-gray-500 mx-auto"></iconify-icon>
+        <div class="flex flex-col gap-4 items-start">
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:java" width="30"></iconify-icon>
+            <span>Java v.11 e v.17</span>
+          </div>
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:spring-icon" width="30"></iconify-icon>
+            <span>Spring</span>
+          </div>
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:php" width="30"></iconify-icon>
+            <span>PHP</span>
+          </div>
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:mysql" width="30"></iconify-icon>
+            <span>MySQL</span>
+          </div>
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:postgresql" width="30"></iconify-icon>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+      </div>
 </div>
 
+  </div>
+
+  <!-- Título após os cards -->
+  <h3 class="text-2xl font-bold mt-16 mb-6 text-center text-white relative z-40">
+    Essas são algumas tecnologias que eu utilizo
+  </h3>
 </div>
-</div>
-<h3 class="text-2xl font-bold mt-16 mb-6 text-center">Essas são algumas tecnologias que eu utilizo</h3>
-</div>
+
 
   <!--                                                       termina 2  seção -->
 
@@ -305,7 +285,7 @@
 <!-- Projetos -->
 
 
-<div class="absolute bottom-[-1620px] left-[-25vw] w-[200vw] h-[120px] bg-black rotate-[-2deg] origin-top-left z-30 overflow-hidden">
+<div class="absolute bottom-[-1920px] left-[-25vw] w-[200vw] h-[120px] bg-black rotate-[-2deg] origin-top-left z-30 overflow-hidden">
   <div id="tsparticles-rodape" class="w-full h-full pointer-events-none"></div>
 </div>
 
