@@ -285,25 +285,30 @@
 <!-- Projetos -->
 
 
-<div class="absolute bottom-[-1920px] left-[-25vw] w-[200vw] h-[120px] bg-black rotate-[-2deg] origin-top-left z-30 overflow-hidden">
-  <div id="tsparticles-rodape" class="w-full h-full pointer-events-none"></div>
+<!-- Diagonal acima da seção Projetos -->
+<div class="relative w-full h-[120px] overflow-hidden">
+  <div class="absolute top-0 left-[-25vw] w-[200vw] h-full bg-black rotate-[-2deg] origin-top-left z-10">
+    <div id="tsparticles-rodape" class="w-full h-full pointer-events-none"></div>
+  </div>
 </div>
 
+<!-- Seção Projetos -->
+<section id="projetos" class="scroll-mt-[-70px] relative text-center min-h-screen flex flex-col justify-center items-center
+bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden px-4 sm:px-8 lg:px-20 py-20" data-aos="fade-up" data-aos-duration="1200">
 
-<!-- Seção real, sem interferência da faixa -->
- <section id="projetos" class="scroll-mt-[-70px] relative text-center min-h-[130vh] flex flex-col justify-center items-center
- bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
-  <!-- Apresentação -->
-   
-  <div class="relative z-20 mt-[-750px]">
-   <h3 class="text-3xl font-bold text-center text-white mb-12">Projetos Desenvolvidos</h3>
-   <div class="grid md:grid-cols-3 gap-6">
+  <!-- Título e grid de projetos -->
+  <div class="relative z-20">
+    <h3 class="text-3xl font-bold text-center text-white mb-12">Projetos Desenvolvidos</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition">
         <h4 class="text-xl font-semibold mb-2">Sistema de Chamados</h4>
-        <img src="img/Captura de tela 2025-03-02 180330.png" alt="Sistema de Chamados"  class="w-full h-40 object-cover rounded mb-4">
+        <img src="img/Captura de tela 2025-03-02 180330.png" alt="Sistema de Chamados" class="w-full h-40 object-cover rounded mb-4">
         <p class="text-gray-600">Sistema web com PHP e AJAX para envio de chamados com banco de dados MySQL.</p>
       </div>
+    </div>
   </div>
+</section>
+
 
  <!-- dependências via folder and cdn -->
 <script src="script/responsive-header-two.js"></script>

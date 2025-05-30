@@ -33,4 +33,9 @@ html {
       }
       header {
   font-family: 'Segoe UI', sans-serif;
+}@media (max-width: 640px) {
+  .faixa-diagonal {
+    left: -10vw !important;
+    width: 110vw !important;
+  }
 }
