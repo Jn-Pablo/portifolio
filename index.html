@@ -70,35 +70,38 @@
 <!-- termina o header-->
 
 <!-- header flutuante -->
+<!-- header flutuante -->
 <header id="floatingHeader" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4 transition-all duration-500 opacity-0 pointer-events-none">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
     <h1 class="text-xl font-bold text-blue-600"><a href="#sobre">Joan Pablo</a></h1>
 
-    <button id="menu-toggle" aria-label="Toggle menu" class="block sm:hidden text-blue-600 focus:outline-none">
+    <!-- Botão hamburguer exclusivo do header flutuante -->
+    <button id="floating-menu-toggle" aria-label="Toggle menu" class="block sm:hidden text-blue-600 focus:outline-none">
       <!-- Ícone hambúrguer -->
-      <svg id="icon-hamburger" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg id="floating-icon-hamburger" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
-      <!-- Ícone X (fechar), escondido inicialmente -->
-      <svg id="icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <!-- Ícone X -->
+      <svg id="floating-icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
 
+    <!-- Menu desktop -->
     <nav class="hidden sm:flex space-x-12 text-blue-600 text-[17px]">
-      <a href="#sobre" data-section="sobre" class="relative group hover:text-blue-200">
+      <a href="#sobre" class="relative group hover:text-blue-200">
         Sobre
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
-      <a href="#ferramentas" data-section="ferramentas" class="relative group hover:text-blue-200">
+      <a href="#ferramentas" class="relative group hover:text-blue-200">
         Ferramentas
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
-      <a href="#projetos" data-section="projetos" class="relative group hover:text-blue-200">
+      <a href="#projetos" class="relative group hover:text-blue-200">
         Projetos
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
-      <a href="#contato" data-section="contato" class="relative group hover:text-blue-200">
+      <a href="#contato" class="relative group hover:text-blue-200">
         Contato
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
@@ -108,8 +111,8 @@
     </nav>
   </div>
 
-  <nav id="mobile-menu" class="sm:hidden hidden flex-col bg-blue-700 text-white text-lg px-6 py-6 space-y-6 max-w-xs mx-auto mt-4 rounded-md shadow-lg opacity-0 transform -translate-y-4 transition-all duration-300"
->
+  <!-- Menu mobile exclusivo do header flutuante -->
+  <nav id="floating-mobile-menu" class="sm:hidden hidden flex-col bg-blue-700 text-white text-lg px-6 py-6 space-y-6 max-w-xs mx-auto mt-4 rounded-md shadow-lg opacity-0 transform -translate-y-4 transition-all duration-300">
     <a href="#sobre" class="block opacity-70 hover:opacity-100 transition">Sobre</a>
     <a href="#ferramentas" class="block opacity-70 hover:opacity-100 transition">Ferramentas</a>
     <a href="#projetos" class="block opacity-70 hover:opacity-100 transition">Projetos</a>
@@ -120,6 +123,7 @@
   </nav>
 </header>
 
+
 <!--Se alguem tiver vendo isso,eu n sei codar no front-->
 
 <!--                                                  2ª seção                        -->
@@ -127,9 +131,9 @@
  bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
   <!-- Apresentação -->
   <div class="relative z-20 mt-[-750px]">
-    <h2 class=" text-2xl sm:text-3xl md:text-4xl text-white mb-4">Olá, eu sou o Joan Pablo</h2>
+    <h2 class=" text-2xl sm:text-3xl md:text-4xl text-white mb-4">Olá, me chamo Joan Pablo</h2>
     <p class="text-base sm:text-lg md:text-xl text-white max-w-xl mx-auto" data-aos="fade-up" data-aos-duration="2000">
-      Sou Formado em Técnologia da Informação, aprendiz em proramação, com foco em desenvolvimento web.
+      sou Formado em Técnologia da Informação, aprendiz em proramação, com foco em desenvolvimento web Back end.
     </p>
   </div>
   <div class="absolute bottom-[120px] z-20 text-center "data-aos="fade-up" data-aos-duration="3000">
@@ -188,7 +192,7 @@
         <iconify-icon icon="carbon:server-rack" width="28" class="mb-4 text-gray-500 mx-auto"></iconify-icon>
         <div class="flex flex-col gap-4 items-start">
           <div class="flex items-center gap-3"><iconify-icon icon="logos:java" width="30"></iconify-icon>
-            <span>Java v.11 e v.17</span>
+            <span>Java versões 11 e 17</span>
           </div>
           <div class="flex items-center gap-3"><iconify-icon icon="logos:spring-icon" width="30"></iconify-icon>
             <span>Spring</span>
@@ -221,14 +225,10 @@
 
 <!-- Ferramentas -->
 <section id="ferramentas" class="mt-180 relative min-h-[160vh] w-full px-4 pt-64 pb-64 bg-black z-20 scroll-mt-[1000px] overflow-hidden">
-
   <!-- tsParticles aqui dentro -->
   <div id="tsparticles" class="absolute inset-0 z-0"></div>
-
-  <!-- Conteúdo da section -->
   <div class="relative z-10 text-white">
     <h3 class="text-2xl font-bold mb-6 text-center">Principais Ferramentas</h3>
-
     <div class="grid md:grid-cols-2 gap-2 justify-items-center">
       <!-- Cartão PHP -->
       <div data-aos="fade-up"
@@ -313,14 +313,19 @@ bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden px-4 s
 
 
  <!-- dependências via folder and cdn -->
-<script src="script/responsive-header-two.js"></script>
-<script src="script/responsive-menu.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
+<script src="script/responsive-header-two.js"></script>
+<script src="script/responsive-menu-fixed.js"></script>
 <script src="script/initialization-aos-ts.js"></script>
-<script src="script/scroll-header.js"></script>
-<script src="script/scroll-dinamic-header-two.js"></script>
+<script src="script/scroll-rows-header-two.js"></script>
+<script src="script/view-header-two.js"></script>
+
+
+
 
 
 

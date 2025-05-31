@@ -21,7 +21,7 @@
     });
   }
 window.addEventListener("scroll", onScroll);
-window.addEventListener("load", onScroll); // ⬅️ Adicionado para rodar ao carregar a página
+window.addEventListener("load", onScroll); // Adicionado para rodar ao carregar a página
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     setTimeout(() => {
