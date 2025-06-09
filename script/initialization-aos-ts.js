@@ -1,39 +1,44 @@
-  AOS.init(); 
-tsParticles.load("tsparticles", {
-  fullScreen: { enable: false },
-  particles: {
-    number: {
-      value: 80,
-      density: { enable: true, value_area: 800 }
+AOS.init();
+
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    background: {
+      color: "#000000" // fundo preto
     },
-    color: { value: "#ffffff" }, // bolinhas brancas
-    shape: { type: "circle" },
-    opacity: {
-      value: 0.5,
-      random: true
+    particles: {
+      number: {
+        value: 80,
+        density: { enable: true, area: 800 }
+      },
+      color: { value: "#ffffff" }, // bolinhas brancas
+      shape: { type: "circle" },
+      opacity: {
+        value: 0.5,
+        random: true
+      },
+      size: {
+        value: 3,
+        random: true
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        outModes: {
+          default: "out"
+        }
+      }
     },
-    size: {
-      value: 3,
-      random: true
+    interactivity: {
+      events: {
+        onHover: { enable: true, mode: "repulse" },
+        onClick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        repulse: { distance: 100, duration: 0.4 },
+        push: { quantity: 4 }
+      }
     },
-    move: {
-      enable: true,
-      speed: 1,
-      direction: "none",
-      out_mode: "out"
-    }
-  },
-  interactivity: {
-    events: {
-      onhover: { enable: true, mode: "repulse" },
-      onclick: { enable: true, mode: "push" }
-    },
-    modes: {
-      repulse: { distance: 100, duration: 0.4 },
-      push: { particles_nb: 4 }
-    }
-  },
-  background: {
-    color: "#000000" // fundo preto
-  }
-});
+    detectRetina: true
+  });

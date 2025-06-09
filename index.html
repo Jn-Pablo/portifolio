@@ -152,6 +152,7 @@
   <div class="absolute inset-0 w-full h-full bg-black z-0">
     <div id="tsparticles-cards" class="w-full h-full"></div>
   </div>
+
   <!-- Container dos cards -->
   <div id="cards" class="relative z-40 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0 px-4 mt-[-150px]">
     
@@ -163,23 +164,23 @@
                   rounded-x p-8 cursor-pointer flex flex-col justify-center h-full">
         <h4 class="text-xl font-semibold text-center mb-4">Front end</h4>
         <div class="flex flex-col gap-4 items-start">
-              <div class="flex items-center gap-3">
-                <iconify-icon icon="logos:html-5" width="30"></iconify-icon>
-                <span>HTML5</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <iconify-icon icon="logos:tailwindcss-icon" width="30"></iconify-icon>
-                <span>TailwindCSS</span>
-              </div>
-              <div class="flex items-center gap-3"><iconify-icon icon="logos:javascript" width="30"></iconify-icon>
-                <span>JavaScript</span>
-              </div>
-              <div class="flex items-center gap-3"><iconify-icon icon="logos:css-3" width="30"></iconify-icon>
-                <span>CSS3</span>
-              </div>
-              <div class="flex items-center gap-3"><iconify-icon icon="logos:bootstrap" width="30"></iconify-icon>
-                <span>Bootstrap</span>
-              </div>
+          <div class="flex items-center gap-3">
+            <iconify-icon icon="logos:html-5" width="30"></iconify-icon>
+            <span>HTML5</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <iconify-icon icon="logos:tailwindcss-icon" width="30"></iconify-icon>
+            <span>TailwindCSS</span>
+          </div>
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:javascript" width="30"></iconify-icon>
+            <span>JavaScript</span>
+          </div>
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:css-3" width="30"></iconify-icon>
+            <span>CSS3</span>
+          </div>
+          <div class="flex items-center gap-3"><iconify-icon icon="logos:bootstrap" width="30"></iconify-icon>
+            <span>Bootstrap</span>
+          </div>
         </div>
       </div>
     </div>
@@ -210,20 +211,28 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Frameworks e IDEs (parte dos cards) -->
+  <div class="relative z-40 mt-16 flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+    <h3 class="text-2xl font-bold mb-6 text-white  text-center">Frameworks e IDEs</h3>
+ <div class="w-full flex justify-center flex-wrap gap-8 items-center z-40 relative" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+  <iconify-icon icon="logos:postman-icon" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
+  <iconify-icon icon="logos:git-icon" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
+  <iconify-icon icon="mdi:github" width="48" class="text-white transition-transform duration-300 hover:scale-110"></iconify-icon>
+  <iconify-icon icon="vscode-icons:file-type-vscode" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
+  <iconify-icon icon="simple-icons:apachemaven" width="48" class="text-white transition-transform duration-300 hover:scale-110"></iconify-icon>
+  <iconify-icon icon="simple-icons:eclipseide" width="48" class="text-white transition-transform duration-300 hover:scale-110"></iconify-icon>
+  <iconify-icon icon="logos:composer" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
 </div>
+
 
   </div>
-  <!-- Título após os cards -->
-  <h3 class="text-2xl font-bold mt-16 mb-6 text-center text-white relative z-40">
-    Essas são algumas tecnologias que eu utilizo
-  </h3>
-  <h3 class="text-white text-sm text-center mb-6 relative z-40">
-  Atualmente estou praticando front end aos poucos, mais meu roby mesmo e o Back end
-  </h3>
 </div>
 
 
-  <!--                                                       termina 2  seção -->
+   <!--                                                     termina 2  seção -->
 
 <!-- Ferramentas -->
 <section id="ferramentas" class="mt-180 relative min-h-[160vh] w-full px-4 pt-64 pb-64 bg-black z-20 scroll-mt-[1000px] overflow-hidden">
@@ -290,15 +299,18 @@
 
 
 <!-- Diagonal acima da seção Projetos -->
-<div class="relative w-full h-[120px] overflow-hidden">
-  <div class="absolute top-0 left-[-25vw] w-[200vw] h-full bg-black rotate-[-2deg] origin-top-left z-10">
-    <div id="tsparticles-rodape" class="w-full h-full pointer-events-none"></div>
+<!-- Seção Projetos -->
+<div class="relative w-full h-[90px] overflow-hidden z-30">
+  <div class="absolute top-0 left-0 w-full h-full z-30">
+    <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon fill="black" points="0,100 100,0 100,100" />
+    </svg>
   </div>
 </div>
 
-<!-- Seção Projetos -->
 <section id="projetos" class="scroll-mt-[-70px] relative text-center min-h-screen flex flex-col justify-center items-center
-bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden px-4 sm:px-8 lg:px-20 py-20" data-aos="fade-up" data-aos-duration="1200">
+bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden px-4 sm:px-8 lg:px-20 py-20 z-10"
+data-aos="fade-up" data-aos-duration="1200">
 
   <!-- Título e grid de projetos -->
   <div class="relative z-20">
@@ -312,6 +324,53 @@ bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden px-4 s
     </div>
   </div>
 </section>
+
+<!-- Faixa diagonal preta acima da próxima seção -->
+
+
+<!-- Seção Contato -->
+<section id="contato" class="scroll-mt-[120px] relative bg-black text-white py-24 px-6 sm:px-12 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+  <!-- Partículas de fundo -->
+  <div id="tsparticles" class="absolute inset-0 z-0 pointer-events-none"></div>
+
+  <div class="max-w-3xl mx-auto text-center relative z-10">
+    <h3 class="text-4xl font-bold mb-4">Contato</h3>
+    <p class="text-gray-400 text-lg mb-12">caso queria entrar em contato </p>
+
+    <div class="flex flex-col gap-6 sm:flex-row sm:justify-center sm:gap-12 mb-16">
+      <!-- Email -->
+      <a href="mailto:joan.pablocosta@gmail.com" class="flex items-center gap-3 text-lg hover:text-green-400 transition duration-300">
+        <iconify-icon icon="mdi:email-outline" width="28" class="text-green-400"></iconify-icon>
+        joan.pablocosta@gmail.com
+      </a>
+
+      <!-- LinkedIn -->
+     <a href="https://linkedin.com/in/joanpablo" target="_blank" class="flex items-center gap-3 text-lg hover:text-blue-400 transition duration-300 whitespace-nowrap">
+  <iconify-icon icon="mdi:linkedin" width="28" class="text-blue-400"></iconify-icon>
+  linkedin.com/in/joanpablo
+</a>
+
+
+      <!-- GitHub -->
+      <a href="https://github.com/Jn-Pablo" target="_blank" class="flex items-center gap-3 text-lg hover:text-gray-300 transition duration-300">
+        <iconify-icon icon="mdi:github" width="28" class="text-white"></iconify-icon>
+        github.com/Jn-Pablo
+      </a>
+    </div>
+
+    <!-- Agradecimento -->
+    <div class="text-center">
+      <div class="flex justify-center items-center gap-2 text-white text-lg">
+        <iconify-icon icon="mdi:heart" width="24" class="text-red-500"></iconify-icon>
+        <span>Valeu por visitar meu portfólio profissional de TI 💡</span>
+      </div>
+      <p class="mt-2 text-sm text-gray-500 italic">feito com carinho por <strong>J. Pablo</strong>, futuro engenheiro Aeroespacial pelo ITA</p>
+    </div>
+  </div>
+</section>
+
+
+
 
 
  <!-- dependências via folder and cdn -->
