@@ -5,20 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Resume Jpablo</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700" rel="stylesheet">
+    
+
      <!-- efeito aos -->
      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="path/para/icomoon/style.css">
+
      <link rel="stylesheet" href="style/config-body-scroll.css">
  
 </head>
-<body class=" text-gray-800   bg-gradient-to-br from-blue-500 via-blue-400 to-green-400">
+<style>
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  15%  { transform: rotate(14deg); }
+  30%  { transform: rotate(-8deg); }
+  40%  { transform: rotate(14deg); }
+  50%  { transform: rotate(-4deg); }
+  60%  { transform: rotate(10deg); }
+  70%  { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.wave-hand {
+  display: inline-block;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+}
+</style>
+
+<body class=" text-gray-800 bg-gradient-to-br from-[#060d1a] via-[#2a497e] to-[#3b62a0] ">
 <!-- Header flutuante -->
-<header id="header" class="absolute pt-10 left-0 w-full z-50 transition-all duration-500 bg-transparent">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <h1 class="text-3xl font-light text-white">
-      <a href="#sobre">Joan Pablo</a>
-    </h1>
+<header id="header" class="absolute pt-6 left-0 w-full z-50 transition-all duration-500 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6 py-14 flex justify-between items-center">
+<div class="text-center">
+  <h1 style="font-family: 'Inter', sans-serif; font-weight: 200;" class="text-3xl sm:text-4xl md:text-3xl tracking-wide text-white">
+    <a href="#sobre">Joan Pablo</a>
+  </h1>
+  <p style="font-family: 'Inter', sans-serif; font-weight: 150;" class="text-base sm:text-x md:text-x text-gray-100 mt-2">
+  <  Desenvolvedor Back end PHP />
+  </p>
+</div>
+
+
 
     <!-- Botão hamburguer -->
     <button id="menu-toggle" aria-label="Toggle menu" class="block sm:hidden text-white text-3xl focus:outline-none">
@@ -33,17 +62,17 @@
     </button>
 
     <!-- Menu desktop -->
-    <nav id="menu" class="hidden sm:flex space-x-12 text-white text-lg">
-      <a href="#sobre" class="relative group opacity-70 hover:opacity-100 transition">
+    <nav id="menu"  style="font-family: 'Inter', sans-serif; font-weight: 300;" class="hidden sm:flex space-x-12 text-white text-mb ml-2"  >
+      <a href="#sobre" class="relative group opacity-70 hover:opacity-150 transition">
         Sobre
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
       <a href="#ferramentas" class="relative group opacity-70 hover:opacity-100 transition">
-        Ferramentas
+        Projetos
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
       <a href="#projetos" class="relative group opacity-70 hover:opacity-100 transition">
-        Projetos
+        Certificações
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-white transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
       <a href="#contato" class="relative group opacity-70 hover:opacity-100 transition">
@@ -70,12 +99,15 @@
 <!-- termina o header-->
 
 <!-- header flutuante -->
-<!-- header flutuante -->
-<header id="floatingHeader" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-4 transition-all duration-500 opacity-0 pointer-events-none">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-blue-600"><a href="#sobre">Joan Pablo</a></h1>
-
-    <!-- Botão hamburguer exclusivo do header flutuante -->
+<header id="floatingHeader" class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-2 transition-all duration-500 opacity-0 pointer-events-none">
+  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+    
+    <h1 style="font-family: 'Inter', sans-serif; font-weight: 200;" class="text-3xl font-bold text-blue-600 ml-12">
+      <a href="#sobre">Joan Pablo</a>
+    </h1>
+    <!-- Botã <h1 style="font-family: 'Inter', sans-serif; font-weight: 200;" class="text-3xl font-bold text-blue-600">
+      <a href="#sobre">Joan Pablo</a>
+    </h1>o hamburguer exclusivo do header flutuante -->
     <button id="floating-menu-toggle" aria-label="Toggle menu" class="block sm:hidden text-blue-600 focus:outline-none">
       <!-- Ícone hambúrguer -->
       <svg id="floating-icon-hamburger" class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -88,17 +120,17 @@
     </button>
 
     <!-- Menu desktop -->
-    <nav class="hidden sm:flex space-x-12 text-blue-600 text-[17px]">
+    <nav style="font-family: 'Inter', sans-serif; font-weight: 300;" class="hidden sm:flex ml-auto space-x-12 text-blue-600 text-[17px]">
       <a href="#sobre" class="relative group hover:text-blue-200">
         Sobre
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
       <a href="#ferramentas" class="relative group hover:text-blue-200">
-        Ferramentas
+        Projetos
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
       <a href="#projetos" class="relative group hover:text-blue-200">
-        Projetos
+        Certificações
         <span class="absolute left-1/2 -bottom-1 w-0 h-[2px] bg-blue-200 transition-all duration-300 ease-in-out transform -translate-x-1/2 origin-center group-hover:w-full"></span>
       </a>
       <a href="#contato" class="relative group hover:text-blue-200">
@@ -110,7 +142,6 @@
       </a>
     </nav>
   </div>
-
   <!-- Menu mobile exclusivo do header flutuante -->
   <nav id="floating-mobile-menu" class="sm:hidden hidden flex-col bg-blue-700 text-white text-lg px-6 py-6 space-y-6 max-w-xs mx-auto mt-4 rounded-md shadow-lg opacity-0 transform -translate-y-4 transition-all duration-300">
     <a href="#sobre" class="block opacity-70 hover:opacity-100 transition">Sobre</a>
@@ -122,24 +153,70 @@
     </a>
   </nav>
 </header>
-
-
-<!--Se alguem tiver vendo isso,eu n sei codar no front-->
-
 <!--                                                  2ª seção                        -->
-<section id="sobre" class="scroll-mt-[200px] relative text-center min-h-[130vh] flex flex-col justify-center items-center
- bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+<section id="sobre" class="scroll-mt-[200px] relative text-center min-h-[120vh] flex flex-col justify-center items-center
+bg-gradient-to-br from-[#060d1a] via-[#2a497e] to-[#3b62a0]
+ overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
   <!-- Apresentação -->
-  <div class="relative z-20 mt-[-750px]">
-    <h2 class=" text-2xl sm:text-3xl md:text-4xl text-white mb-4">Olá, me chamo Joan Pablo</h2>
-    <p class="text-base sm:text-lg md:text-xl text-white max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="2000">
-      sou Formado em Técnologia da Informação, aprendiz em diversas áreas da técnologia, com foco em desenvolvimento  Back end.
-      atualmente estudo para o ITA no colégio Arí de Sá Cavalcante, mas sempre nos tempos livres , elaboro projetos nas quais 
-      sejam realmente necessário no dia a dia .
+ <div class="flex flex-col md:flex-row items-center justify-between mt-[-855px] px-4 md:px-16 h-full">
+  <!-- Lado esquerdo: Texto -->
+  <div class="md:w-1/2 ml-12 -translate-x-2">
+    
+  <h2
+  style="font-family: 'Inter', sans-serif; font-weight: 400;"
+  class="text-left text-2xl sm:text-3xl md:text-4xl text-white mb-4"
+>
+<h2 class="text-2xl sm:text-3xl md:text-4xl text-white mb-4 font-normal font-[Inter] flex items-center gap-2">
+  Olá, 
+  <img alt="👋"src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png"class="wave-hand h-[1.5em] w-[1.5em]" draggable="false" />
+       me chamo Joan Pablo</h2>
+    <p style="font-family: 'Inter', sans-serif; font-weight: 300;" 
+       class="text-left  text-lg sm:text-xl md:text-xl text-white"
+       data-aos="fade-up" data-aos-duration="2000">
+      Sou formado em Tecnologia da Informação, aprendiz em diversas áreas da tecnologia, com foco em desenvolvimento Back-end.
+      Atualmente estudo para o ITA no colégio Ari de Sá Cavalcante, mas sempre nos tempos livres, elaboro projetos nas quais sejam realmente relevantes no dia a dia.
+      Atualmente utilizo a linguagem PHP com framework Laravel, PHPunit e Composer, além de bancos de dados como MySQL e PostgreSQL e outras frameworks interessantes.
+    
     </p>
+<div class="flex items-center gap-4 mt-6">
+  <!-- GitHub -->
+  <a href="https://github.com/Jn-Pablo" target="_blank" aria-label="GitHub"
+     class="bg-gray-900 hover:bg-gray-800 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105">
+    <iconify-icon icon="mdi:github" width="20" height="20"></iconify-icon>
+  </a> 
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/joan-pablo-793a68324/" 
+     target="_blank" 
+     aria-label="LinkedIn"
+     class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105">
+    <iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon>
+  </a>
+  <!-- Email -->
+  <a href="mailto:joan.pablocosta@gmail.com" aria-label="Email"
+     class="bg-red-600 hover:bg-red-700 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105">
+    <iconify-icon icon="mdi:email" width="20" height="20"></iconify-icon>
+  </a>
+</div>
+
+<div  class="mt-4 flex justify-start">
+  <a href="docs/CV_Joan_Pablo.pdf" style="font-family: 'Inter', sans-serif; font-weight: 300;"  download
+     class="inline-block px-6 py-3 bg-[#1f304f] text-white font-semibold uppercase tracking-wider rounded border-2 border-blue-800 transition-all duration-300 hover:bg-gray-800 hover:border-white hover:text-white">
+     Baixar CV
+  </a>
+</div>
+
   </div>
+  <!-- Lado direito: Imagem -->
+<div class="md:w-1/2 flex justify-center mt-20 md:mt-18">
+  <img src="img/joanpablo.png" alt="Estudante ITA" 
+       class="w-full max-w-xl h-auto ">
+</div>
+
+</div>
+
+  
   <div class="absolute bottom-[120px] z-20 text-center "data-aos="fade-up" data-aos-duration="3000">
-    <h3 style="font-family: 'Segoe UI', sans-serif;"  class="text-3xl font-bold text-white">Readme Competências</h3>
+    <h3  style="font-family: 'Inter', sans-serif; font-weight: 500;"  class="text-3xl font-bold text-white">README COMPETÊNCIAS</h3>
   </div>
 
   <!-- Diagonal -->
@@ -157,12 +234,16 @@
   <div id="cards" class="relative z-40 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0 px-4 mt-[-150px]">
     
     <!-- Card Front end -->
-    <div class="w-full md:w-[400px] max-w-[90vw]" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+    <div class="w-full md:w-[400px] max-w-[90vw]" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
       <div class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
                   transition-all duration-1000 ease-in-out 
                   shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] 
-                  rounded-x p-8 cursor-pointer flex flex-col justify-center h-full">
-        <h4 class="text-xl font-semibold text-center mb-4">Front end</h4>
+                  rounded-x p-8 cursor-pointer flex flex-col justify-center min-h-[380px] h-full">
+ <h4 style="font-family: 'Inter', sans-serif; font-weight: 500;"class="text-2xl font-semibold text-center mb-4 flex items-center justify-center gap-2">
+  Front end
+  <iconify-icon icon="mdi:monitor" width="30"></iconify-icon>
+</h4>
+        
         <div class="flex flex-col gap-4 items-start">
           <div class="flex items-center gap-3">
             <iconify-icon icon="logos:html-5" width="30"></iconify-icon>
@@ -186,23 +267,32 @@
     </div>
 
     <!-- Card Back end -->
-    <div class="w-full md:w-[500px] max-w-[90vw]" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+    <div class="w-full md:w-[500px] max-w-[810vw]" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1500">
       <div class="bg-white text-gray-800 hover:bg-[#525552] hover:text-white 
                   transition-all duration-1000 ease-in-out 
                   shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] 
-                  rounded-x p-8 cursor-pointer flex flex-col justify-center h-full">
-        <h4 class="text-xl font-semibold text-center mb-6">Back end</h4>
+                  rounded-x p-8 cursor-pointer flex flex-col justify-center min-h-[395px] h-full">
+ <h4 style="font-family: 'Inter', sans-serif; font-weight: 500;"class="text-2xl font-semibold text-center mb-4 flex items-center justify-center gap-2">
+  Back end
+  <iconify-icon icon="mdi:layers" width="30"></iconify-icon>
+</h4>
+
         <iconify-icon icon="carbon:server-rack" width="28" class="mb-4 text-gray-500 mx-auto"></iconify-icon>
         <div class="flex flex-col gap-4 items-start">
-          <div class="flex items-center gap-3"><iconify-icon icon="logos:java" width="30"></iconify-icon>
-            <span>Java versões 11 e 17</span>
+       <div class="flex items-center gap-3"><iconify-icon icon="logos:php" width="30"></iconify-icon>
+            <span>PHP versões 8.2+ </span>
           </div>
-          <div class="flex items-center gap-3"><iconify-icon icon="logos:spring-icon" width="30"></iconify-icon>
-            <span>Spring</span>
-          </div>
-          <div class="flex items-center gap-3"><iconify-icon icon="logos:php" width="30"></iconify-icon>
-            <span>PHP</span>
-          </div>
+          <div class="flex items-center gap-3">
+           <iconify-icon icon="logos:laravel" width="30"></iconify-icon>
+            <span>Laravel</span>
+          </div> 
+
+
+          <div class="flex items-center gap-3">
+  <iconify-icon icon="logos:composer" width="30"></iconify-icon>
+  <span>Composer</span>
+</div>
+
           <div class="flex items-center gap-3"><iconify-icon icon="logos:mysql" width="30"></iconify-icon>
             <span>MySQL</span>
           </div>
@@ -214,157 +304,144 @@
     </div>
   </div>
 
+
   <!-- Frameworks e IDEs (parte dos cards) -->
   <div class="relative z-40 mt-16 flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-    <h3 class="text-2xl font-bold mb-6 text-white  text-center">Frameworks e IDEs</h3>
+   <h3  style="font-family: 'Inter', sans-serif; font-weight: 500;"  class="text-3xl font-bold text-white">FRAMEWORKS E IDES</h3>
+
  <div class="w-full flex justify-center flex-wrap gap-8 items-center z-40 relative" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
+  <iconify-icon icon="logos:composer" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
   <iconify-icon icon="logos:postman-icon" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
   <iconify-icon icon="logos:git-icon" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
   <iconify-icon icon="mdi:github" width="48" class="text-white transition-transform duration-300 hover:scale-110"></iconify-icon>
   <iconify-icon icon="vscode-icons:file-type-vscode" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
   <iconify-icon icon="simple-icons:apachemaven" width="48" class="text-white transition-transform duration-300 hover:scale-110"></iconify-icon>
   <iconify-icon icon="simple-icons:eclipseide" width="48" class="text-white transition-transform duration-300 hover:scale-110"></iconify-icon>
-  <iconify-icon icon="logos:composer" width="48" class="transition-transform duration-300 hover:scale-110"></iconify-icon>
+ 
 </div>
 
 
   </div>
+<!-- Bloco com título e parágrafo (imagem removida) -->
+<div  style="font-family: 'Inter', sans-serif; font-weight: 400;" class="relative z-40 mt-32 max-w-3xl px-4 text-left ml-24" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+  
+<h3 class="text-2xl md:text-3xl font-bold text-white mb-6 flex items-center gap-2">
+  <!-- Ícone de cérebro -->
+  <iconify-icon icon="mdi:brain" width="32" height="32"></iconify-icon>
+  EXPERIÊNCIAS
+</h3>
+  <p style="font-family: 'Inter', sans-serif; font-weight: 500;" class="text-gray-300 text-base md:text-lg">
+    Tenho experiências com desenvolvimento de sistemas web, principalmente com PHP e Laravel.
+    Já trabalhei em projetos de automação de processos, integração de APIs e desenvolvimento de aplicações
+    que facilitam o dia a dia de usuários e empresas. Estou sempre em busca de aprender novas tecnologias e aprimorar minhas habilidades. 
+  </p>
+</div>
+  
 </div>
 
 
    <!--                                                     termina 2  seção -->
 
 <!-- Ferramentas -->
-<section id="ferramentas" class="mt-180 relative min-h-[160vh] w-full px-4 pt-64 pb-64 bg-black z-20 scroll-mt-[1000px] overflow-hidden">
-  <!-- tsParticles aqui dentro -->
-  <div id="tsparticles" class="absolute inset-0 z-0"></div>
+<section id="ferramentas" class="relative min-h-[160vh] w-full px-4 pt-32 pb-32 bg-black z-20 scroll-mt-[1000px] overflow-hidden">
+  <!-- tsParticles -->
+ <div id="tsparticles" class="absolute inset-0 z-0 pointer-events-none"></div>
+
   <div class="relative z-10 text-white">
-    <h3 class="text-2xl font-bold mb-6 text-center">Principais Ferramentas</h3>
-    <div class="grid md:grid-cols-2 gap-2 justify-items-center">
-      <!-- Cartão PHP -->
-      <div data-aos="fade-up"
-        data-aos-duration="1200"
-        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
-        <h4 class="text-xl font-bold text-center">PHP</h4>
-        <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP"
-          class="w-20 h-auto mx-auto mt-4">
-      </div>
+    <h3 style="font-family: 'Inter', sans-serif; font-weight: 500;"
+    class="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-2">
+  <iconify-icon icon="mdi:laptop-code" width="36" height="36"></iconify-icon>
+  Projetos Desenvolvidos
+</h3>
 
-      <!-- Cartão Java -->
-      <div data-aos="fade-up"
-        data-aos-duration="1200"
-        data-aos-delay="300"
-        data-aos-offset="120"
-        data-aos-easing="ease-out-cubic"
-        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
-        <h4 class="text-xl font-semibold mb-5 text-center">Java</h4>
-        <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java Logo"
-          class="w-14 h-auto mb-6 mx-auto">
-      </div>
-    </div>
-
-    <h3 class="text-2xl font-bold mt-16 mb-6 text-center">Banco de Dados</h3>
-
-    <div class="grid md:grid-cols-2 gap-4 justify-items-center">
-      <!-- Cartão MySQL -->
-      <div data-aos="fade-up"
-        data-aos-duration="1200"
-        data-aos-delay="300"
-        data-aos-offset="120"
-        data-aos-easing="ease-out-cubic"
-        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
-        <h4 class="text-xl font-semibold mb-4 text-center">MySQL</h4>
-        <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo"
-          class="w-20 h-auto mb-2 mx-auto">
-      </div>
-
-      <!-- Cartão PostgreSQL -->
-      <div data-aos="fade-up"
-        data-aos-duration="1200"
-        data-aos-delay="300"
-        data-aos-offset="120"
-        data-aos-easing="ease-out-cubic"
-        class="bg-white text-black p-6 rounded-xl shadow-lg w-60 h-60 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-110 hover:-translate-y-1 hover:shadow-2xl cursor-pointer">
-        <h4 class="text-xl font-semibold mb-4 text-center">PostgreSQL</h4>
-        <img src="https://images.icon-icons.com/2415/PNG/512/postgresql_original_wordmark_logo_icon_146392.png"
-          alt="PostgreSQL Logo" class="w-20 h-auto mb-2 mx-auto">
-      </div>
-    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+    
+     
+      
   </div>
+  
 </section>
-
-
-
-<!-- Projetos -->
-
-
-<!-- Diagonal acima da seção Projetos -->
-<!-- Seção Projetos -->
-<!-- Diagonal acima da seção Projetos -->
-<div class="relative w-full h-[90px] overflow-hidden z-30">
-  <div class="absolute top-0 left-[-25vw] w-[250vw] h-full bg-black rotate-[-2deg] origin-top-left z-30"></div>
-</div>
-
-<section id="projetos" class="scroll-mt-[-70px] relative text-center min-h-screen flex flex-col justify-center items-center
-bg-gradient-to-br from-blue-500 via-blue-400 to-green-400 overflow-hidden px-4 sm:px-8 lg:px-20 py-20 z-10"
-data-aos="fade-up" data-aos-duration="1200">
-  <!-- Título e grid de projetos -->
-  <div class="relative z-20">
-    <h3 class="text-3xl font-bold text-center text-white mb-12">Projetos Desenvolvidos</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold mb-2">Sistema de Chamados</h4>
-        <img src="img/Captura de tela 2025-03-02 180330.png" alt="Sistema de Chamados" class="w-full h-40 object-cover rounded mb-4">
-        <p class="text-gray-600">Sistema web com PHP e AJAX para envio de chamados com banco de dados MySQL.</p>
-      </div>
-    </div>
+<!-- Diagonal TOP -->
+  
+<div class="absolute top-[-2deg] left-[-25vw] w-[250vw] h-[90px] bg-black rotate-[-2deg] origin-bottom-left z-10 overflow-hidden">
+    <div id="tsparticles-topo" class="w-full h-full"></div>
   </div>
-</section>
 
-
-<!-- Faixa diagonal preta acima da próxima seção -->
-
-
-<!-- Seção Contato -->
-<section id="contato" class="scroll-mt-[120px] relative bg-black text-white py-24 px-6 sm:px-12 overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
-  <!-- Partículas de fundo -->
-  <div id="tsparticles" class="absolute inset-0 z-0 pointer-events-none"></div>
-
-  <div class="max-w-3xl mx-auto text-center relative z-10">
-    <h3 class="text-4xl font-bold mb-4">Contato</h3>
-    <p class="text-gray-400 text-lg mb-12">caso queria entrar em contato </p>
-
-    <div class="flex flex-col gap-6 sm:flex-row sm:justify-center sm:gap-12 mb-16">
+<section
+  id="projetos"
+  class="relative text-center min-h-[50vh] flex flex-col justify-center items-center
+    bg-gradient-to-br from-[#060d1a] via-[#2a497e] to-[#3b62a0] overflow-hidden px-4 sm:px-8 lg:px-20 py-8"
+  data-aos="fade-up"
+  data-aos-duration="1200">
+  
+  <!-- Conteúdo -->
+  <div style="font-family: 'Inter', sans-serif; font-weight: 500;" class="relative z-20 flex flex-col items-center gap-6">
+    <h3 class="text-3xl font-bold text-white mb-6">Contato</h3>
+    <div class="flex flex-wrap justify-center gap-6">
       <!-- Email -->
-      <a href="mailto:joan.pablocosta@gmail.com" class="flex items-center gap-3 text-lg hover:text-green-400 transition duration-300">
-        <iconify-icon icon="mdi:email-outline" width="28" class="text-green-400"></iconify-icon>
-        joan.pablocosta@gmail.com
+      <a
+        href="mailto:joan.pablocosta@gmail.com"
+        class="flex items-center gap-2 text-lg hover:text-green-400 transition duration-300"
+      >
+        <iconify-icon icon="mdi:email-outline" width="24" class="text-green-400"></iconify-icon>
+        <span class="whitespace-nowrap">joan.pablocosta@gmail.com</span>
       </a>
-
       <!-- LinkedIn -->
-     <a href="https://linkedin.com/in/joanpablo" target="_blank" class="flex items-center gap-3 text-lg hover:text-blue-400 transition duration-300 whitespace-nowrap">
-  <iconify-icon icon="mdi:linkedin" width="28" class="text-blue-400"></iconify-icon>
-  linkedin.com/in/joanpablo
-</a>
-
-
-      <!-- GitHub -->
-      <a href="https://github.com/Jn-Pablo" target="_blank" class="flex items-center gap-3 text-lg hover:text-gray-300 transition duration-300">
-        <iconify-icon icon="mdi:github" width="28" class="text-white"></iconify-icon>
-        github.com/Jn-Pablo
+      <a
+        href="https://www.linkedin.com/in/joan-pablo-793a68324/"
+        target="_blank"
+        class="flex items-center gap-2 text-lg hover:text-blue-400 transition duration-300"
+      >
+        <iconify-icon icon="mdi:linkedin" width="24" class="text-blue-400"></iconify-icon>
+        <span class="whitespace-nowrap">https://linkedin.com/in/joanpablo</span>
       </a>
-    </div>
-
-    <!-- Agradecimento -->
-    <div class="text-center">
-      <div class="flex justify-center items-center gap-2 text-white text-lg">
-        <iconify-icon icon="mdi:heart" width="24" class="text-red-500"></iconify-icon>
-        <span>Valeu por visitar meu portfólio profissional de TI 💡</span>
-      </div>
-      <p class="mt-2 text-sm text-gray-500 italic">feito com carinho por <strong>J. Pablo</strong>, futuro engenheiro Aeroespacial pelo ITA</p>
+      <!-- GitHub -->
+      <a
+        href="https://github.com/Jn-Pablo"
+        target="_blank"
+        class="flex items-center gap-2 text-lg hover:text-gray-300 transition duration-300"
+      >
+        <iconify-icon icon="mdi:github" width="24" class="text-white"></iconify-icon>
+        <span class="whitespace-nowrap">https://github.com/Jn-Pablo</span>
+      </a>
     </div>
   </div>
 </section>
+
+ 
+<!-- Faixa -->
+<section
+  id="contato"
+  class="scroll-mt-[120px] relative bg-black text-white py-16 px-6 sm:px-12"
+  data-aos="fade-up"
+  data-aos-duration="1200"
+>
+  <!-- Faixa inclinada no topo -->
+  <div
+    class="absolute top-0 left-0 w-full h-20 bg-black rotate-[-2deg] origin-top-left z-10"
+  ></div>
+
+  <!-- Conteúdo -->
+  <div class="relative z-20 max-w-2xl mx-auto text-center">
+    <div class="flex flex-col items-center gap-4 mb-8">
+      <div class="flex justify-center items-center gap-2 text-lg">
+        <iconify-icon
+          icon="mdi:heart"
+          width="20"
+          class="text-red-500"
+        ></iconify-icon>
+        <span style="font-family: 'Inter', sans-serif; font-weight: 500;">Valeu por visitar meu portfólio 💡</span>
+      </div>
+      <p class="text-xs text-gray-500 italic">
+        Feito com carinho por <strong>J. Pablo</strong>, futuro engenheiro Aeroespacial pelo ITA.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 
@@ -374,18 +451,11 @@ data-aos="fade-up" data-aos-duration="1200">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-
 <script src="script/responsive-header-two.js"></script>
 <script src="script/responsive-menu-fixed.js"></script>
 <script src="script/initialization-aos-ts.js"></script>
 <script src="script/scroll-rows-header-two.js"></script>
 <script src="script/view-header-two.js"></script>
-
-
-
-
-
 
 </body>
 </html>
