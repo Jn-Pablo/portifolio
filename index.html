@@ -33,6 +33,14 @@
   transform-origin: 70% 70%;
 }
 </style>
+<style>
+#sobre > div:first-child {
+  margin-top: 0;          /* Zera margens */
+  padding-top: 2rem;      /* Espaço em cima, ajuste como quiser */
+  transform: translateY(-400px); /* Subir tudo 100px */
+}
+</style>
+
 
 <body class=" text-gray-800 bg-gradient-to-br from-[#060d1a] via-[#2a497e] to-[#3b62a0] ">
 <!-- Header flutuante -->
@@ -154,76 +162,111 @@
   </nav>
 </header>
 <!--                                                  2ª seção                        -->
-<section id="sobre" class="scroll-mt-[200px] relative text-center min-h-[120vh] flex flex-col justify-center items-center
-bg-gradient-to-br from-[#060d1a] via-[#2a497e] to-[#3b62a0]
- overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
-  <!-- Apresentação -->
- <div class="flex flex-col md:flex-row items-center justify-between mt-[-855px] px-4 md:px-16 h-full">
-  <!-- Lado esquerdo: Texto -->
-  <div class="md:w-1/2 ml-12 -translate-x-2">
-    
-  <h2
-  style="font-family: 'Inter', sans-serif; font-weight: 400;"
-  class="text-left text-2xl sm:text-3xl md:text-4xl text-white mb-4"
+<section
+  id="sobre"
+  class="scroll-mt-[200px] relative text-center min-h-[150vh] flex flex-col items-center
+  bg-gradient-to-br from-[#060d1a] via-[#2a497e] to-[#3b62a0]
+  overflow-hidden"
+  data-aos="fade-up"
+  data-aos-duration="1200"
 >
-<h2 class="text-2xl sm:text-3xl md:text-4xl text-white mb-4 font-normal font-[Inter] flex items-center gap-2">
-  Olá, 
-  <img alt="👋"src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png"class="wave-hand h-[1.5em] w-[1.5em]" draggable="false" />
-       me chamo Joan Pablo</h2>
-    <p style="font-family: 'Inter', sans-serif; font-weight: 300;" 
-       class="text-left  text-lg sm:text-xl md:text-xl text-white"
-       data-aos="fade-up" data-aos-duration="2000">
-      Sou formado em Tecnologia da Informação, aprendiz em diversas áreas da tecnologia, com foco em desenvolvimento Back-end.
-      Atualmente estudo para o ITA no colégio Ari de Sá Cavalcante, mas sempre nos tempos livres, elaboro projetos nas quais sejam realmente relevantes no dia a dia.
-      Atualmente utilizo a linguagem PHP com framework Laravel, PHPunit e Composer, além de bancos de dados como MySQL e PostgreSQL e outras frameworks interessantes.
-    
-    </p>
-<div class="flex items-center gap-4 mt-6">
-  <!-- GitHub -->
-  <a href="https://github.com/Jn-Pablo" target="_blank" aria-label="GitHub"
-     class="bg-gray-900 hover:bg-gray-800 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105">
-    <iconify-icon icon="mdi:github" width="20" height="20"></iconify-icon>
-  </a> 
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/joan-pablo-793a68324/" 
-     target="_blank" 
-     aria-label="LinkedIn"
-     class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105">
-    <iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon>
-  </a>
-  <!-- Email -->
-  <a href="mailto:joan.pablocosta@gmail.com" aria-label="Email"
-     class="bg-red-600 hover:bg-red-700 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105">
-    <iconify-icon icon="mdi:email" width="20" height="20"></iconify-icon>
-  </a>
-</div>
 
-<div  class="mt-4 flex justify-start">
-  <a href="docs/CV_Joan_Pablo.pdf" style="font-family: 'Inter', sans-serif; font-weight: 300;"  download
-     class="inline-block px-6 py-3 bg-[#1f304f] text-white font-semibold uppercase tracking-wider rounded border-2 border-blue-800 transition-all duration-300 hover:bg-gray-800 hover:border-white hover:text-white">
-     Baixar CV
-  </a>
-</div>
-
+  <!-- Container principal -->
+  <div
+    class="flex flex-col md:flex-row items-center justify-between w-full px-4 md:px-16 py-64 md:py-32"
+  >
+    <!-- Lado esquerdo: Texto -->
+    <div class="md:w-1/2 w-full md:pl-12 text-left">
+      <h2
+        class="text-2xl sm:text-3xl md:text-3xl text-white mb-4 font-normal font-[Inter] flex items-center gap-2"
+      >
+        Olá,
+        <img
+          alt="👋"
+          src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png"
+          class="wave-hand h-[1.5em] w-[1.5em]"
+          draggable="false"
+        />
+        me chamo Joan Pablo
+      </h2>
+      <p
+        class="text-lg sm:text-xl md:text-xl text-white font-light"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Sou formado em Tecnologia da Informação, aprendiz em diversas áreas da tecnologia, com foco em desenvolvimento Back-end.
+        Atualmente estudo para o ITA no colégio Ari de Sá Cavalcante, mas sempre nos tempos livres, elaboro projetos nas quais sejam realmente relevantes no dia a dia.
+        Atualmente utilizo a linguagem PHP com framework Laravel, PHPunit e Composer, além de bancos de dados como MySQL e PostgreSQL e outras frameworks interessantes.
+      </p>
+      <div class="flex items-center gap-4 mt-6 flex-wrap">
+        <!-- GitHub -->
+        <a
+          href="https://github.com/Jn-Pablo"
+          target="_blank"
+          aria-label="GitHub"
+          class="bg-gray-900 hover:bg-gray-800 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105"
+        >
+          <iconify-icon icon="mdi:github" width="20" height="20"></iconify-icon>
+        </a>
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/joan-pablo-793a68324/"
+          target="_blank"
+          aria-label="LinkedIn"
+          class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105"
+        >
+          <iconify-icon icon="mdi:linkedin" width="20" height="20"></iconify-icon>
+        </a>
+        <!-- Email -->
+        <a
+          href="mailto:joan.pablocosta@gmail.com"
+          aria-label="Email"
+          class="bg-red-600 hover:bg-red-700 text-white rounded-full p-3 inline-flex items-center justify-center shadow-md transition-transform hover:scale-105"
+        >
+          <iconify-icon icon="mdi:email" width="20" height="20"></iconify-icon>
+        </a>
+      </div>
+      <div class="mt-4">
+        <a
+          href="docs/CV_Joan_Pablo.pdf"
+          download
+          class="inline-block px-6 py-3 bg-[#1f304f] text-white font-semibold uppercase tracking-wider rounded border-2 border-blue-800 transition-all duration-300 hover:bg-gray-800 hover:border-white hover:text-white"
+        >
+          Baixar CV
+        </a>
+      </div>
+    </div>
+    <!-- Lado direito: Imagem -->
+    <div class="md:w-1/2 w-full flex justify-center mt-10 md:mt-0">
+      <img
+        src="img/joanpablo.png"
+        alt="Estudante ITA"
+        class="w-full max-w-xs md:max-w-xl h-auto"
+      />
+    </div>
   </div>
-  <!-- Lado direito: Imagem -->
-<div class="md:w-1/2 flex justify-center mt-20 md:mt-18">
-  <img src="img/joanpablo.png" alt="Estudante ITA" 
-       class="w-full max-w-xl h-auto ">
-</div>
 
-</div>
-
-  
-  <div class="absolute bottom-[120px] z-20 text-center "data-aos="fade-up" data-aos-duration="3000">
-    <h3  style="font-family: 'Inter', sans-serif; font-weight: 500;"  class="text-3xl font-bold text-white">README COMPETÊNCIAS</h3>
+  <!-- README COMPETÊNCIAS -->
+  <div
+    class="absolute bottom-32 z-20 w-full text-center"
+    data-aos="fade-up"
+    data-aos-duration="3000"
+  >
+    <h3
+      class="text-3xl font-bold text-white font-[Inter] font-medium"
+    >
+      README COMPETÊNCIAS
+    </h3>
   </div>
 
-  <!-- Diagonal -->
- <div class="absolute bottom-[-100px] left-[-25vw] w-[250vw] h-[90px] bg-black rotate-[-2deg] origin-top-left z-10 overflow-hidden">
-  <div id="tsparticles-rodape" class="w-full h-full"></div>
-</div>
+  <!-- Diagonal decorativa -->
+  <div
+    class="absolute bottom-[-100px] left-[-25vw] w-[250vw] h-[90px] bg-black rotate-[-2deg] origin-top-left z-10"
+  >
+    <div id="tsparticles-rodape" class="w-full h-full"></div>
+  </div>
 </section>
+
 
 <div class="relative w-full bg-white z-30 py-16">
   <div class="absolute inset-0 w-full h-full bg-black z-0">
